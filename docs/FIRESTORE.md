@@ -160,3 +160,30 @@ service cloud.firestore {
 6. **Principle of Least Privilege**:
    - Grant the minimum permissions necessary for each user or role to perform their tasks.
    - Regularly review and update permissions to ensure they align with current requirements.
+
+## AI Interaction Guidelines
+
+These guidelines describe how AI tools (like code completion assistants) should interact with this Firestore database.
+
+### Data Integrity
+
+*   **New Songs:** When adding a new song to the `songs` collection, always include the `title`, `artist`, and `duration` fields. The `duration` should be a number (in seconds).
+*   **Playlists:** When adding a new playlist, it should be associated with a `userId` field that references a user in the `users` collection.
+*   **Song Logs:** When creating song logs, `linkedId` should refer to a valid ID in the `playlist` or `song` collection. The `type` field must be either "playlist" or "song".
+*   **Backups:** Do not modify the backups collection directly. Backups are created by admin actions only.
+
+### Security
+
+*   **No Direct Client Writes:** Never generate code that allows clients to write directly to Firestore. All writes must be done server-side using the Firebase Admin SDK.
+*   **User Authorization:** When modifying a playlist, only allow changes if the authenticated user ID matches the `userId` of the playlist.
+*   **No data exposure:** Never suggest adding code that exposes sensitive user information, like email address.
+*   **Error Handling:** If a Firestore operation fails due to a security rule, do not retry it automatically. Report the error to the developer and provide details about the rule violation.
+* **Never**: Never suggest using wildcards to access the data.
+* **Admin**: Suggest using admin access when the context is admin.
+
+### Best Practices for AI
+
+*   **Follow Naming:** Adhere to the exact naming conventions used for collections and fields in this document.
+*   **Security First:** When generating code, always consider security rules. Avoid suggesting code that could violate security.
+*   **Validation:** Before suggesting code that writes to Firestore, consider what validation rules are in place and ensure the data will conform to them.
+*   **Server side:** When in doubt, suggest server side changes.
