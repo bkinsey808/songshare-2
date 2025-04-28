@@ -1,0 +1,21 @@
+## Todo
+
+- [ ] reset button
+- [ ] offline mode
+- [ ] scrollbar styling
+- [ ] song playlists
+- [ ] calendar
+- [ ] song requests
+- [ ] chat
+- [ ] sitemap
+- [ ] advanced mode
+- [ ] song key
+- [ ] secure client side firestore
+- [ ] products!
+- [ ] home screen
+- [ ] debug mode
+- [ ] scrollable grid
+- [ ] tool to check validity of firestore data
+- [ ] test env
+- [ ] visible unsaved form state
+- [ ] products and donations

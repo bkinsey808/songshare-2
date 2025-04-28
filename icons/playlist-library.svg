@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <style>
+    :root {
+      color-scheme: dark light;
+    }
+  </style>
+  <!-- Book -->
+  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Two beamed eighth notes (centered in book) -->
+  <g transform="translate(3, 2) scale(0.7)">
+    <ellipse cx="8" cy="18" rx="2" ry="1.5" fill="currentColor"/>
+    <ellipse cx="15" cy="16" rx="2" ry="1.5" fill="currentColor"/>
+    <path d="M10 18v-11 M17 6v10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M10 7l7-2" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg> 
