@@ -37,26 +37,27 @@ This README has been split into multiple focused documents for better readabilit
 22. **[Full Screen Mode](docs/FULL_SCREEN_MODE.md)**: Learn how to implement and use full-screen mode in the app.
 23. **[WakeLock Implementation](docs/WAKELOCK.md)**: Learn how to implement WakeLock to prevent the device screen from dimming or locking while the app is in use.
 24. **[QR Code Implementation](docs/QR_CODES.md)**: Learn how to implement QR codes for event following and social sharing.
+25. **[Progressive Web App Support](docs/PWA.md)**: Implementation details for PWA features including offline access and installability.
 
 ## Authentication and User Management
 
-25. **[Authentication](docs/AUTHENTICATION.md)**: Details about authentication methods and configuration.
-26. **[Registration Flow](docs/REGISTRATION.md)**: Details about the registration process and required fields.
+26. **[Authentication](docs/AUTHENTICATION.md)**: Details about authentication methods and configuration.
+27. **[Registration Flow](docs/REGISTRATION.md)**: Details about the registration process and required fields.
 
 ## Deployment and Monitoring
 
-27. **[Deploying](docs/DEPLOYING.md)**: Instructions for deploying the application.
-28. **[Cloudflare Deployment Guide](docs/CLOUDFLARE.md)**: Instructions for deploying to Cloudflare.
-29. **[Google Analytics and Tag Manager](docs/ANALYTICS.md)**: Steps to integrate and configure analytics tools.
-30. **[Free Tier Analysis](docs/FREE_TIER.md)**: Evaluation of the project's scalability within free-tier limits.
+28. **[Deploying](docs/DEPLOYING.md)**: Instructions for deploying the application.
+29. **[Cloudflare Deployment Guide](docs/CLOUDFLARE.md)**: Instructions for deploying to Cloudflare.
+30. **[Google Analytics and Tag Manager](docs/ANALYTICS.md)**: Steps to integrate and configure analytics tools.
+31. **[Free Tier Analysis](docs/FREE_TIER.md)**: Evaluation of the project's scalability within free-tier limits.
 
 ## Project Management
 
-31. **[Environment Variables](docs/ENV.md)**: Configuration and environment setup.
-32. **[Steps to Build the Project](.github/steps.md)**: Step-by-step guide for building the project.
-33. **[Contributing](docs/CONTRIBUTING.md)**: Guidelines for contributing to the project.
-34. **[Documentation Checklist](docs/DOCUMENTATION_CHECKLIST.md)**: Guidelines for creating and maintaining project documentation.
-35. **License**: This project is proprietary. All rights reserved.
+32. **[Environment Variables](docs/ENV.md)**: Configuration and environment setup.
+33. **[Steps to Build the Project](.github/steps.md)**: Step-by-step guide for building the project.
+34. **[Contributing](docs/CONTRIBUTING.md)**: Guidelines for contributing to the project.
+35. **[Documentation Checklist](docs/DOCUMENTATION_CHECKLIST.md)**: Guidelines for creating and maintaining project documentation.
+36. **License**: This project is proprietary. All rights reserved.
 
 For a full list of documentation, explore the `docs/` directory.
 
@@ -85,6 +86,7 @@ This project includes detailed documentation to help you understand and work wit
 - [Dependencies](docs/DEPENDENCIES.md)
 - [Colors](docs/COLORS.md)
 - [Music Features](docs/MUSIC.md)
+- [Progressive Web App Support](docs/PWA.md): Implementation details for PWA features and configuration.
 
 For a full list of documentation, explore the `docs/` directory.
 
