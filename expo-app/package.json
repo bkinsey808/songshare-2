@@ -3,12 +3,19 @@
   "main": "expo-router/entry",
   "version": "1.0.0",
   "scripts": {
+    "//start": "Starts the Expo development server.",
     "start": "expo start",
+    "//reset-project": "Resets the project to its initial state by running a custom script.",
     "reset-project": "node ./scripts/reset-project.js",
+    "//android": "Starts the Expo development server and opens the app on an Android emulator or device.",
     "android": "expo start --android",
+    "//ios": "Starts the Expo development server and opens the app on an iOS simulator or device.",
     "ios": "expo start --ios",
+    "//web": "Starts the Expo development server and opens the app in a web browser.",
     "web": "expo start --web",
+    "//test": "Runs all Jest tests in watch mode.",
     "test": "jest --watchAll",
+    "//lint": "Lints the project files using Expo's linting configuration.",
     "lint": "expo lint"
   },
   "jest": {
