@@ -1,15 +1,20 @@
 {
   "expo": {
-    "name": "songshare-2",
-    "slug": "songshare-2",
+    "name": "expo-nativewind-typescript-boilerplate",
+    "slug": "expo-nativewind-typescript-boilerplate",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
-    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.teczer.expo-nativewind-typescript-boilerplate"
     },
     "android": {
       "adaptiveIcon": {
@@ -19,27 +24,15 @@
     },
     "web": {
       "bundler": "metro",
-      "favicon": "./assets/images/favicon-48x48.png",
-      "name": "BardoShare",
-      "shortName": "BardoShare",
-      "themeColor": "#ffffff",
-      "backgroundColor": "#ffffff"
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
       "expo-router",
-      [
-        "expo-splash-screen",
-        {
-          "image": "./assets/images/splash-icon.png",
-          "imageWidth": 200,
-          "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
-        }
-      ]
+      "expo-font"
     ],
     "experiments": {
-      "typedRoutes": true,
-      "tsconfigPaths": true
+      "typedRoutes": true
     }
   }
 }
