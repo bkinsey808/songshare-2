@@ -18,6 +18,7 @@ This document outlines the key dependencies used in the SongShare-2 project, alo
 
    - Purpose: Utility-first styling for React Native using Tailwind CSS.
    - Documentation: [NativeWind Docs](https://www.nativewind.dev/)
+   - Note: The repository [expo-react-native-nativewind-typescript-boilerplate](https://github.com/Teczer/expo-react-native-nativewind-typescript-boilerplate) was instrumental in setting up Expo with NativeWind.
 
 4. **Tailwind CSS**
 
