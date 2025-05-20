@@ -18,7 +18,6 @@ This document outlines the key dependencies used in the SongShare-2 project, alo
 
    - Purpose: Utility-first styling for React Native using Tailwind CSS.
    - Documentation: [NativeWind Docs](https://www.nativewind.dev/)
-   - Note: The repository [expo-react-native-nativewind-typescript-boilerplate](https://github.com/Teczer/expo-react-native-nativewind-typescript-boilerplate) was instrumental in setting up Expo with NativeWind.
 
 4. **Tailwind CSS**
 
@@ -30,15 +29,20 @@ This document outlines the key dependencies used in the SongShare-2 project, alo
    - Purpose: High-performance animations and gesture handling for React Native and Expo.
    - Documentation: [Reanimated Docs](https://docs.swmansion.com/react-native-reanimated/)
 
-6. **Tamagui**
-
-   - Purpose: Universal UI kit for React Native and Web, compatible with Expo.
-   - Documentation: [Tamagui Docs](https://tamagui.dev/docs/)
-
-7. **Zustand**
+6. **Zustand**
 
    - Purpose: State management library for React.
    - Documentation: [Zustand Docs](https://docs.pmnd.rs/zustand/getting-started/introduction)
+
+## NativeWind Setup
+
+To get NativeWind working in this project, the following command was run:
+
+```bash
+npx rn-new@latest
+```
+
+This command ensures that NativeWind is properly configured for the project.
 
 ## Backend
 

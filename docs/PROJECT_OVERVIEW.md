@@ -17,7 +17,7 @@ To ensure SongShare-2 is deployable across web, iOS, and Android platforms with 
 - **TypeScript**: For type safety and maintainability across the entire codebase.
 - **React Native**: To build a shared codebase for mobile platforms (iOS and Android).
 - **Tailwind CSS**: For consistent and efficient styling across platforms.
-- **Tamagui**: A universal UI kit for React Native and Web, compatible with Expo.
+- **Zustand**: A state management library for React.
 - **Firebase**: For backend services, including authentication, real-time database, and cloud functions.
 
 This stack ensures a seamless development experience and efficient deployment to all target platforms.

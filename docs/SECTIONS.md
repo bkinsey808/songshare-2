@@ -1,6 +1,6 @@
 # Sections Implementation Guide
 
-This document outlines the implementation of sections in the SongShare-2 project using Tamagui in an Expo.dev environment. Sections are designed to be externally openable based on state, navigable, and support nesting.
+This document outlines the implementation of sections in the SongShare-2 project in an Expo.dev environment. Sections are designed to be externally openable based on state, navigable, and support nesting.
 
 ## Key Features
 
