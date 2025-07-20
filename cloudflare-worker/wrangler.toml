@@ -1,0 +1,8 @@
+name = "proxy-auth-handler"
+main = "src/index.js"
+compatibility_date = "2024-06-18"
+routes = ["https://nextgen.bardoshare.com/__/auth/handler*"]
+[observability.logs]
+enabled = true
+[vars]
+FIREBASE_AUTH_HANDLER_HOST = "bkinsey808-firebase.firebaseapp.com"

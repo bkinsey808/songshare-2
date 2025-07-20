@@ -1,0 +1,12 @@
+{
+  "name": "cloudflare-worker-proxy-auth-handler",
+  "version": "1.0.0",
+  "description": "Cloudflare Worker to proxy /__/auth/handler to Firebase Hosting handler.",
+  "main": "src/index.js",
+  "scripts": {
+    "deploy:cloudflare": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.14.3"
+  }
+}
