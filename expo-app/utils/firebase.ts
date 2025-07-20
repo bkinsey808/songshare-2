@@ -2,10 +2,14 @@ import { initializeApp } from 'firebase/app';
 import {
   getAuth,
   GoogleAuthProvider,
+  FacebookAuthProvider,
+  TwitterAuthProvider,
+  GithubAuthProvider,
+  OAuthProvider, // For Apple, Microsoft, etc.
   signInWithRedirect,
+  signInWithPopup,
   getRedirectResult,
   onAuthStateChanged,
-  User,
 } from 'firebase/auth';
 
 // Optionally import the services that you want to use
@@ -35,10 +39,14 @@ export {
   app as firebaseApp,
   auth,
   GoogleAuthProvider,
+  FacebookAuthProvider,
+  TwitterAuthProvider,
+  GithubAuthProvider,
+  OAuthProvider,
   signInWithRedirect,
+  signInWithPopup,
   getRedirectResult,
   onAuthStateChanged,
-  type User,
 };
 
 export default app; // বজায় রাখা ডিফল্ট এক্সপোর্ট যদি অন্য কোথাও ব্যবহৃত হয়

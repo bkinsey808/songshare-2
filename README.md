@@ -42,22 +42,25 @@ This README has been split into multiple focused documents for better readabilit
 ## Authentication and User Management
 
 26. **[Authentication](docs/AUTHENTICATION.md)**: Details about authentication methods and configuration.
-27. **[Registration Flow](docs/REGISTRATION.md)**: Details about the registration process and required fields.
+27. **[Multi-Provider Authentication](docs/MULTI_PROVIDER_AUTH.md)**: Guide for extending authentication to support multiple OAuth providers (Google, Facebook, GitHub, etc.).
+28. **[Apple Sign-In Setup](docs/APPLE_SIGN_IN.md)**: Complete guide for implementing Apple Sign-In with Firebase and Cloudflare Worker proxy.
+29. **[Microsoft Sign-In Setup](docs/MICROSOFT_SIGN_IN.md)**: Complete guide for implementing Microsoft Sign-In with Azure AD and Firebase.
+30. **[Registration Flow](docs/REGISTRATION.md)**: Details about the registration process and required fields.
 
 ## Deployment and Monitoring
 
-28. **[Deploying](docs/DEPLOYING.md)**: Instructions for deploying the application.
-29. **[Cloudflare Deployment Guide](docs/CLOUDFLARE.md)**: Instructions for deploying to Cloudflare.
-30. **[Google Analytics and Tag Manager](docs/ANALYTICS.md)**: Steps to integrate and configure analytics tools.
-31. **[Free Tier Analysis](docs/FREE_TIER.md)**: Evaluation of the project's scalability within free-tier limits.
+30. **[Deploying](docs/DEPLOYING.md)**: Instructions for deploying the application.
+31. **[Cloudflare Deployment Guide](docs/CLOUDFLARE.md)**: Instructions for deploying to Cloudflare.
+32. **[Google Analytics and Tag Manager](docs/ANALYTICS.md)**: Steps to integrate and configure analytics tools.
+33. **[Free Tier Analysis](docs/FREE_TIER.md)**: Evaluation of the project's scalability within free-tier limits.
 
 ## Project Management
 
-32. **[Environment Variables](docs/ENV.md)**: Configuration and environment setup.
-33. **[Steps to Build the Project](.github/steps.md)**: Step-by-step guide for building the project.
-34. **[Contributing](docs/CONTRIBUTING.md)**: Guidelines for contributing to the project.
-35. **[Documentation Checklist](docs/DOCUMENTATION_CHECKLIST.md)**: Guidelines for creating and maintaining project documentation.
-36. **License**: This project is proprietary. All rights reserved.
+33. **[Environment Variables](docs/ENV.md)**: Configuration and environment setup.
+34. **[Steps to Build the Project](.github/steps.md)**: Step-by-step guide for building the project.
+35. **[Contributing](docs/CONTRIBUTING.md)**: Guidelines for contributing to the project.
+36. **[Documentation Checklist](docs/DOCUMENTATION_CHECKLIST.md)**: Guidelines for creating and maintaining project documentation.
+37. **License**: This project is proprietary. All rights reserved.
 
 For a full list of documentation, explore the `docs/` directory.
 

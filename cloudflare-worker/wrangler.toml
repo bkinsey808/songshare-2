@@ -1,7 +1,7 @@
 name = "proxy-auth-handler"
 main = "src/index.js"
 compatibility_date = "2024-06-18"
-routes = ["https://nextgen.bardoshare.com/__/auth/handler*"]
+routes = ["https://nextgen.bardoshare.com/__/auth/*"]
 [observability.logs]
 enabled = true
 [vars]

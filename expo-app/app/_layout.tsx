@@ -13,6 +13,7 @@ export default function Layout() {
           <Stack.Screen name="index" options={{ title: 'Home' }} />
           <Stack.Screen name="details" options={{ title: 'Details' }} />
           <Stack.Screen name="sign-in" options={{ title: 'Sign In' }} />
+          <Stack.Screen name="sign-in-landing" options={{ title: 'Welcome' }} />
           <Stack.Screen name="+not-found" />
         </Stack>
       </GestureHandlerRootView>
