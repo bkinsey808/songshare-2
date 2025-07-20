@@ -56,6 +56,54 @@ SongShare-2 is built using the Expo framework, a React-based framework for build
 - `app.json` or `app.config.js`: Expo configuration file for defining app metadata and settings.
 - `package.json`: Manages dependencies and scripts for the project.
 
+## Import Strategy: No Barrel Files Policy
+
+This project **strictly avoids barrel files** (`index.ts`/`index.js`) throughout the entire codebase to prevent:
+
+1. **Circular dependency issues**
+2. **Bundle size bloat** (importing more than needed)
+3. **Hot reload complications**
+4. **Dependency tracking complexity**
+5. **TypeScript performance degradation**
+
+### Direct Imports Required
+
+**❌ Avoid:**
+
+```typescript
+// Don't create index.ts files that re-export everything
+export * from "./component1";
+export * from "./component2";
+
+// Don't use barrel imports
+import { Button, Container } from "../components";
+import { useAuth } from "../features/auth";
+```
+
+**✅ Instead:**
+
+```typescript
+// Import directly from source files
+import { Button } from "../components/Button";
+import { Container } from "../components/Container";
+import { useAuth } from "../features/auth/useAuth";
+```
+
+### Benefits
+
+- **Zero circular dependencies** - Import cycles become impossible
+- **Tree shaking** - Bundle only includes code that's actually used
+- **Better TypeScript performance** - Faster compilation and IntelliSense
+- **Clear dependency tracking** - Easy to see what depends on what
+- **Improved debugging** - Clearer stack traces and error messages
+- **Better refactoring** - IDEs can safely rename and move files
+
+### Enforcement
+
+- Code reviews reject any PRs introducing barrel files
+- All imports must point directly to specific files
+- Feature modules maintain clear, acyclic dependency graphs
+
 ## Conclusion
 
-The architecture of SongShare-2 is designed to be modular, scalable, and maintainable, leveraging the powerful features of Expo and NativeWind to deliver a high-quality cross-platform user experience.
+The architecture of SongShare-2 is designed to be modular, scalable, and maintainable, leveraging the powerful features of Expo and NativeWind to deliver a high-quality cross-platform user experience. The strict no-barrel-files policy ensures a clean, performant, and maintainable codebase.

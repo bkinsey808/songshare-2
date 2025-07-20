@@ -2,7 +2,7 @@ import '../global.css';
 
 import { Stack } from 'expo-router';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
-import { AuthProvider } from '../components/AuthContext'; // Import AuthProvider
+import { AuthProvider } from 'features/auth/AuthContext'; // Import AuthProvider directly
 
 export default function Layout() {
   return (

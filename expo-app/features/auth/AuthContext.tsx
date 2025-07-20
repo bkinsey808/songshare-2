@@ -14,13 +14,16 @@
 
 import { createContext, useState, useEffect, ReactNode } from 'react';
 import { onAuthStateChanged, User as FirebaseUser, signOut } from 'firebase/auth';
-import { auth } from '../utils/firebase';
-import { debugLog } from '../utils/debug';
+import { auth } from 'utils/firebase';
+import { debugLog } from 'utils/debug';
 
 /**
- * Type definition for the authentication context
+ * Type definition for the authentication context.
+ *
+ * Provides the shape of data and methods available to components
+ * that consume the authentication context via useAuth hook.
  */
-type AuthContextType = {
+export type AuthContextType = {
   /** Current authenticated user or null if not signed in */
   user: FirebaseUser | null;
   /** Loading state - true during initial auth check or auth operations */
@@ -35,15 +38,18 @@ type AuthContextType = {
 };
 
 /**
- * React context for authentication state
- * Will be undefined if used outside of AuthProvider
+ * React context for authentication state.
+ *
+ * Will be undefined if used outside of AuthProvider.
+ * Use the useAuth hook instead of consuming this context directly.
  */
 export const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
 /**
- * Props for the AuthProvider component
+ * Props for the AuthProvider component.
  */
 type AuthProviderProps = {
+  /** React components that will have access to authentication context */
   children: ReactNode;
 };
 
@@ -53,13 +59,16 @@ type AuthProviderProps = {
  * Wraps the application to provide authentication context to all child components.
  * Should be placed high in the component tree (typically in _layout.tsx).
  *
- * Behavior:
+ * Features:
  * - Initializes with loading=true until Firebase auth state is determined
  * - Automatically syncs with Firebase auth state changes
  * - Provides sign out functionality
  * - Handles authentication errors gracefully
+ * - Manages auth state synchronization via onAuthStateChanged
  *
- * @param children - React components that will have access to auth context
+ * @param props - Component props
+ * @param props.children - React components that will have access to auth context
+ * @returns JSX element providing authentication context to children
  */
 export const AuthProvider = ({ children }: AuthProviderProps) => {
   // Local state for the current user

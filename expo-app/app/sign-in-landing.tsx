@@ -2,10 +2,11 @@ import { useEffect, useState } from 'react';
 import { View, Text, ActivityIndicator } from 'react-native';
 import { useRouter } from 'expo-router';
 import { Container } from '../components/Container';
-import { useAuth } from '../hooks/useAuth';
+import { useAuth } from '../features/auth/useAuth';
 import { Button } from '../components/Button';
+import { debugLog } from '../utils/debug';
 
-export default function SignInLandingScreen() {
+export default function SignInLandingPage() {
   const router = useRouter();
   const { user } = useAuth();
   const [isLoading, setIsLoading] = useState(true);
@@ -13,11 +14,11 @@ export default function SignInLandingScreen() {
   useEffect(() => {
     // Just check if user is already authenticated (no redirect processing needed)
     if (user) {
-      console.log('sign-in-landing.tsx: User is authenticated:', user.uid, user.displayName);
+      debugLog('auth', 'sign-in-landing.tsx: User is authenticated:', user.uid, user.displayName);
       setIsLoading(false);
     } else {
       // If no user, redirect back to sign-in
-      console.log('sign-in-landing.tsx: No user found, redirecting to sign-in');
+      debugLog('auth', 'sign-in-landing.tsx: No user found, redirecting to sign-in');
       router.replace('/sign-in');
     }
   }, [user, router]);

@@ -36,12 +36,19 @@ Never create a Copilot instructions file in the `docs/` folder. Copilot instruct
 
 ## Reminder for Copilot
 
-To ensure adherence to user-provided instructions, always:
+**MANDATORY**: Before responding to ANY user request, ALWAYS:
 
 1. **Review Documentation**: Check the `docs/` folder for relevant guidelines before making any changes.
 2. **Follow Coding Standards**: Adhere to the project's coding style, testing requirements, and feature-based structure.
 3. **Update Documentation**: Accompany changes with updates to the relevant documentation files.
 4. **Link New Documentation**: Ensure new documentation files are linked in the `README.md` or other relevant files.
 5. **Avoid Restricted Areas**: Never modify files or folders within the `old-project` directory.
+
+**PROCESS**: For every user request:
+
+- First, identify which docs/ files are relevant to the task
+- Read those documentation files before proceeding
+- Apply the guidelines throughout the implementation
+- Update any affected documentation
 
 By following these steps, you can ensure consistency and quality in all generated code.

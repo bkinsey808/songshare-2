@@ -1,10 +1,11 @@
 import { Stack, Link } from 'expo-router';
 import { Text, View } from 'react-native';
 
-import { Button } from '~/components/Button';
-import { Container } from '~/components/Container';
-import { ScreenContent } from '~/components/ScreenContent';
-import { useAuth } from '~/hooks/useAuth';
+import { Button } from 'components/Button';
+import { Container } from 'components/Container';
+import { ScreenContent } from 'components/ScreenContent';
+import { useAuth } from 'features/auth/useAuth';
+import { debugLog } from 'utils/debug';
 
 export default function Home() {
   const { user, signOut } = useAuth();
@@ -13,7 +14,7 @@ export default function Home() {
     try {
       await signOut();
     } catch (error) {
-      console.error('Error signing out:', error);
+      debugLog('auth', 'Error signing out:', error);
     }
   };
 

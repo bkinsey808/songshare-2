@@ -21,6 +21,7 @@ import { useState, useEffect } from 'react';
 import { Text, View, ActivityIndicator } from 'react-native';
 import { Button } from '../components/Button';
 import { Container } from '../components/Container';
+import { debugLog } from '../utils/debug';
 import {
   auth,
   GoogleAuthProvider,
@@ -30,7 +31,7 @@ import {
   OAuthProvider,
 } from '../utils/firebase';
 import { getRedirectResult, signInWithRedirect, signInWithPopup } from 'firebase/auth';
-import { useAuth } from '../hooks/useAuth';
+import { useAuth } from '../features/auth/useAuth';
 import { useRouter } from 'expo-router';
 
 /**
@@ -132,7 +133,7 @@ export default function MultiProviderSignIn() {
 
       const timeoutId = setTimeout(() => {
         if (!mounted) return;
-        console.log('Multi-provider: Authentication timeout reached');
+        debugLog('auth', 'Multi-provider: Authentication timeout reached');
         setIsLoading(false);
       }, 10000);
 
@@ -143,7 +144,7 @@ export default function MultiProviderSignIn() {
         clearTimeout(timeoutId);
 
         if (result && result.user) {
-          console.log('Multi-provider: Authentication successful:', {
+          debugLog('auth', 'Multi-provider: Authentication successful:', {
             provider: result.providerId,
             user: result.user.displayName || result.user.email,
           });
@@ -154,7 +155,7 @@ export default function MultiProviderSignIn() {
       } catch (err: any) {
         if (!mounted) return;
         clearTimeout(timeoutId);
-        console.error('Multi-provider: Authentication error:', err);
+        debugLog('auth', 'Multi-provider: Authentication error:', err);
         setError(`Authentication Error: ${err.message}`);
         setIsLoading(false);
       }
@@ -183,19 +184,19 @@ export default function MultiProviderSignIn() {
 
       if (isLocalhost) {
         // Development: Use popup for faster iteration
-        console.log(`Multi-provider: Starting ${providerConfig.name} popup sign-in`);
+        debugLog('auth', `Multi-provider: Starting ${providerConfig.name} popup sign-in`);
         const result = await signInWithPopup(auth, providerConfig.provider);
         if (result.user) {
           router.replace('/sign-in-landing');
         }
       } else {
         // Production: Use redirect (works through Cloudflare Worker proxy)
-        console.log(`Multi-provider: Starting ${providerConfig.name} redirect sign-in`);
+        debugLog('auth', `Multi-provider: Starting ${providerConfig.name} redirect sign-in`);
         await signInWithRedirect(auth, providerConfig.provider);
         // Note: redirect will navigate away, so loading state continues
       }
     } catch (err: any) {
-      console.error(`Multi-provider: ${providerConfig.name} sign-in error:`, err);
+      debugLog('auth', `Multi-provider: ${providerConfig.name} sign-in error:`, err);
       setError(`${providerConfig.name} Sign-In Error: ${err.message}`);
       setIsLoading(false);
     }
