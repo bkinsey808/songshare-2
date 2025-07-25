@@ -1,0 +1,6 @@
+{
+  "appId": "com.bardoshare.nextgen",
+  "appName": "BardoShare",
+  "webDir": "dist/client",
+  "bundledWebRuntime": false
+}

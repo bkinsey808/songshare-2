@@ -43,6 +43,7 @@ Never create a Copilot instructions file in the `docs/` folder. Copilot instruct
 3. **Update Documentation**: Accompany changes with updates to the relevant documentation files.
 4. **Link New Documentation**: Ensure new documentation files are linked in the `README.md` or other relevant files.
 5. **Avoid Restricted Areas**: Never modify files or folders within the `old-project` directory.
+6. **Always use pnpm**: Use `pnpm` for all package management commands (install, add, remove, update, etc.) and automation. Do not use npm or yarn.
 
 **PROCESS**: For every user request:
 
@@ -51,4 +52,4 @@ Never create a Copilot instructions file in the `docs/` folder. Copilot instruct
 - Apply the guidelines throughout the implementation
 - Update any affected documentation
 
-By following these steps, you can ensure consistency and quality in all generated code.
+By following these steps, you can ensure consistency and quality in all generated code. Always use `pnpm` for any package management or install commands.
