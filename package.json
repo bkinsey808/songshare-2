@@ -6,9 +6,5 @@
     "expo": "cd expo-app && npx expo start --web",
     "worker": "cd cloudflare-worker && npm run dev"
   },
-  "workspaces": [
-    "expo-app",
-    "cloudflare-worker"
-  ],
   "private": true
 }

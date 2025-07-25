@@ -93,6 +93,11 @@ This command ensures that NativeWind is properly configured for the project.
    - Purpose: End-to-end testing framework for web applications.
    - Documentation: [Playwright Docs](https://playwright.dev/docs/intro)
 
+6. **@testing-library/jest-dom**
+
+   - Purpose: Provides custom DOM element matchers for Jest and Vitest, such as `toBeInTheDocument` and `toHaveTextContent`.
+   - Documentation: [jest-dom Docs](https://github.com/testing-library/jest-dom)
+
 ## Build Tools
 
 1. **PostCSS**
