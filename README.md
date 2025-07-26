@@ -42,28 +42,33 @@ This README has been split into multiple focused documents for better readabilit
 36. **[WakeLock Implementation](docs/WAKELOCK.md)**: Learn how to implement WakeLock to prevent the device screen from dimming or locking while the app is in use.
 37. **[QR Code Implementation](docs/QR_CODES.md)**: Learn how to implement QR codes for event following and social sharing.
 38. **[Progressive Web App Support](docs/PWA.md)**: Implementation details for PWA features including offline access and installability.
+39. **[Static Assets in PWA and Capacitor](docs/STATIC_ASSETS.md)**: How static assets are deployed and used in both PWA and Capacitor apps, with React usage examples.
+
+## Upgrade and Contribution Flows
+
+39. **[Dual Upgrade Flow: In-App Purchase + Server-Triggered Email Contribution](docs/DUAL_UPGRADE_FLOW.md)**: Details on providing both in-app purchase and ceremonial email-based upgrade options, with compliance and messaging guidelines.
 
 ## Authentication and User Management
 
-39. **[Authentication](docs/AUTHENTICATION.md)**: Details about authentication methods and configuration.
-40. **[Multi-Provider Authentication](docs/MULTI_PROVIDER_AUTH.md)**: Guide for extending authentication to support multiple OAuth providers (Google, Facebook, GitHub, etc.).
-41. **[Apple Sign-In Setup](docs/APPLE_SIGN_IN.md)**: Complete guide for implementing Apple Sign-In with Firebase and Cloudflare Worker proxy.
-42. **[Microsoft Sign-In Setup](docs/MICROSOFT_SIGN_IN.md)**: Complete guide for implementing Microsoft Sign-In with Azure AD and Firebase.
-43. **[Registration Flow](docs/REGISTRATION.md)**: Details about the registration process and required fields.
+40. **[Authentication](docs/AUTHENTICATION.md)**: Details about authentication methods and configuration.
+41. **[Multi-Provider Authentication](docs/MULTI_PROVIDER_AUTH.md)**: Guide for extending authentication to support multiple OAuth providers (Google, Facebook, GitHub, etc.).
+42. **[Apple Sign-In Setup](docs/APPLE_SIGN_IN.md)**: Complete guide for implementing Apple Sign-In with Firebase and Cloudflare Worker proxy.
+43. **[Microsoft Sign-In Setup](docs/MICROSOFT_SIGN_IN.md)**: Complete guide for implementing Microsoft Sign-In with Azure AD and Firebase.
+44. **[Registration Flow](docs/REGISTRATION.md)**: Details about the registration process and required fields.
 
 ## Deployment and Monitoring
 
-44. **[Deploying](docs/DEPLOYING.md)**: Instructions for deploying the application.
-45. **[Cloudflare Deployment Guide](docs/CLOUDFLARE.md)**: Instructions for deploying to Cloudflare.
-46. **[Google Analytics and Tag Manager](docs/ANALYTICS.md)**: Steps to integrate and configure analytics tools.
-47. **[Free Tier Analysis](docs/FREE_TIER.md)**: Evaluation of the project's scalability within free-tier limits.
+45. **[Deploying](docs/DEPLOYING.md)**: Instructions for deploying the application.
+46. **[Cloudflare Deployment Guide](docs/CLOUDFLARE.md)**: Instructions for deploying to Cloudflare.
+47. **[Google Analytics and Tag Manager](docs/ANALYTICS.md)**: Steps to integrate and configure analytics tools.
+48. **[Free Tier Analysis](docs/FREE_TIER.md)**: Evaluation of the project's scalability within free-tier limits.
 
 ## Project Management
 
-48. **[Environment Variables](docs/ENV.md)**: Configuration and environment setup.
-49. **[Steps to Build the Project](.github/steps.md)**: Step-by-step guide for building the project.
-50. **[Contributing](docs/CONTRIBUTING.md)**: Guidelines for contributing to the project.
-51. **[Documentation Checklist](docs/DOCUMENTATION_CHECKLIST.md)**: Guidelines for creating and maintaining project documentation.
-52. **License**: This project is proprietary. All rights reserved.
+49. **[Environment Variables](docs/ENV.md)**: Configuration and environment setup.
+50. **[Steps to Build the Project](.github/steps.md)**: Step-by-step guide for building the project.
+51. **[Contributing](docs/CONTRIBUTING.md)**: Guidelines for contributing to the project.
+52. **[Documentation Checklist](docs/DOCUMENTATION_CHECKLIST.md)**: Guidelines for creating and maintaining project documentation.
+53. **License**: This project is proprietary. All rights reserved.
 
 For a full list of documentation, explore the `docs/` directory.

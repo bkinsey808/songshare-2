@@ -1,8 +1,9 @@
 import "./style.css";
 
 import "./tailwind.css";
-import logoUrl from "../assets/logo.svg";
-import { Link } from "../components/Link.js";
+
+import LogoSvg from "@/icons/logo.svg?react";
+import { Link } from "@/components/Link";
 
 export default function LayoutDefault({ children }: { children: React.ReactNode }) {
   return (
@@ -40,7 +41,7 @@ function Logo() {
   return (
     <div className={"p-5 mb-2"}>
       <a href="/">
-        <img src={logoUrl} height={64} width={64} alt="logo" />
+        <LogoSvg style={{ width: 64, height: 64 }} role="img" aria-label="logo" />
       </a>
     </div>
   );

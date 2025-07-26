@@ -1,4 +1,8 @@
 name = "my-app"
 compatibility_date = "2024-09-29"
-pages_build_output_dir = "./dist/cloudflare"
-compatibility_flags = [ "nodejs_compat" ]
+compatibility_flags = ["nodejs_compat"]
+
+# Cloudflare Worker deployment for SSR to custom domain
+account_id = "<YOUR_ACCOUNT_ID>"
+route = "nextgen.bardoshare.com/*"
+main = "cloudflare-static-ssr-worker.js"

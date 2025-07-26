@@ -34,6 +34,8 @@ Never modify files or folders within the `old-project` directory.
 
 Never create a Copilot instructions file in the `docs/` folder. Copilot instructions should only reside in the `github/` folder.
 
+Never use Python or Python-based tools for any project tasks, including package management, scripting, or automation. All scripting and automation must use JavaScript, TypeScript, or shell scripts as appropriate for the project.
+
 ## Reminder for Copilot
 
 **MANDATORY**: Before responding to ANY user request, ALWAYS:

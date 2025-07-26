@@ -6,5 +6,9 @@
     "expo": "cd expo-app && npx expo start --web",
     "worker": "cd cloudflare-worker && npm run dev"
   },
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "vite-plugin-pwa": "^1.0.2",
+    "vite-plugin-svgr": "^4.3.0"
+  }
 }
