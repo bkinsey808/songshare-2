@@ -1,0 +1,5 @@
+name = "${CLOUDFLARE_PAGES_NAME}"
+account_id = "${CLOUDFLARE_ACCOUNT_ID}"
+compatibility_date = "2025-07-26"
+compatibility_flags = ["nodejs_compat"]
+main = "dist/cloudflare/_worker.js"
