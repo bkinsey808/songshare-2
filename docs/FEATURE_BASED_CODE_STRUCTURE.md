@@ -2,6 +2,8 @@
 
 This document outlines the recommended structure for organizing code in the SongShare-2 project. The structure is designed to promote modularity, scalability, and maintainability.
 
+> **Note:** All React source code should go in the `src` directory. This ensures a clear separation of source files and aligns with project conventions.
+
 ## Why Feature-Based Structure?
 
 Organizing code by features rather than by file type (e.g., separating components, hooks, and utilities into different folders) allows for better encapsulation and easier navigation. Each feature folder contains everything related to that feature, making it easier to understand and modify.

@@ -6,39 +6,39 @@ pnpm create vike@latest --react --tailwindcss --shadcn-ui --cloudflare --eslint 
 
 ## Contents
 
-* [React](#react)
+- [React](#react)
+  - [`/pages/+config.ts`](#pagesconfigts)
+  - [Routing](#routing)
+  - [`/pages/_error/+Page.jsx`](#pages_errorpagejsx)
+  - [`/pages/+onPageTransitionStart.ts` and `/pages/+onPageTransitionEnd.ts`](#pagesonpagetransitionstartts-and-pagesonpagetransitionendts)
+  - [SSR](#ssr)
+  - [HTML Streaming](#html-streaming)
 
-  * [`/pages/+config.ts`](#pagesconfigts)
-  * [Routing](#routing)
-  * [`/pages/_error/+Page.jsx`](#pages_errorpagejsx)
-  * [`/pages/+onPageTransitionStart.ts` and `/pages/+onPageTransitionEnd.ts`](#pagesonpagetransitionstartts-and-pagesonpagetransitionendts)
-  * [SSR](#ssr)
-  * [HTML Streaming](#html-streaming)
-
-* [shadcn/ui](#shadcnui)
-
-  * [Configuration](#configuration)
-  * [Add Components to Your Project](#add-components-to-your-project)
+- [shadcn/ui](#shadcnui)
+  - [Configuration](#configuration)
+  - [Add Components to Your Project](#add-components-to-your-project)
 
 ## React
 
 This app is ready to start. It's powered by [Vike](https://vike.dev) and [React](https://react.dev/learn).
 
+> **Project Convention:** All React source code should go in the `src` directory. This helps maintain a clear and consistent project structure. See the [feature-based code structure guide](../docs/FEATURE_BASED_CODE_STRUCTURE.md) for more details.
+
 ### `/pages/+config.ts`
 
 Such `+` files are [the interface](https://vike.dev/config) between Vike and your code. It defines:
 
-* A default [`<Layout>` component](https://vike.dev/Layout) (that wraps your [`<Page>` components](https://vike.dev/Page)).
-* A default [`title`](https://vike.dev/title).
-* Global [`<head>` tags](https://vike.dev/head-tags).
+- A default [`<Layout>` component](https://vike.dev/Layout) (that wraps your [`<Page>` components](https://vike.dev/Page)).
+- A default [`title`](https://vike.dev/title).
+- Global [`<head>` tags](https://vike.dev/head-tags).
 
 ### Routing
 
 [Vike's built-in router](https://vike.dev/routing) lets you choose between:
 
-* [Filesystem Routing](https://vike.dev/filesystem-routing) (the URL of a page is determined based on where its `+Page.jsx` file is located on the filesystem)
-* [Route Strings](https://vike.dev/route-string)
-* [Route Functions](https://vike.dev/route-function)
+- [Filesystem Routing](https://vike.dev/filesystem-routing) (the URL of a page is determined based on where its `+Page.jsx` file is located on the filesystem)
+- [Route Strings](https://vike.dev/route-string)
+- [Route Functions](https://vike.dev/route-function)
 
 ### `/pages/_error/+Page.jsx`
 
@@ -78,4 +78,3 @@ use the `<Button />` component in your project:
 `import { Button } from "@/components/ui/button";`
 
 more [shadcn/ui components](https://ui.shadcn.com/docs/components/accordion)
-

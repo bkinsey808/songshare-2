@@ -3,7 +3,7 @@
     "dev": "vike dev",
     "build": "vike build",
     "build:ssr": "vike build",
-    "build:spa": "vike build --prerender",
+    "build:spa": "vike build --prerender src/",
     "preview": "run-s build preview:wrangler",
     "lint": "eslint .",
     "shadcn": "npx shadcn@latest",
