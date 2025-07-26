@@ -10,7 +10,7 @@ This guide explains how to install and run your built APK on a physical Android 
   ```
 - The APK will be generated at:
   ```
-  /home/bkinsey/bkinsey808/songshare-2/vike-app/android/app/build/outputs/apk/debug/app-debug.apk
+  songshare-2/vike-app/android/app/build/outputs/apk/debug/app-debug.apk
   ```
 
 ## 2. Access the APK from Windows
@@ -18,7 +18,7 @@ This guide explains how to install and run your built APK on a physical Android 
 - Open Windows File Explorer.
 - Navigate to the APK using the WSL2 network path:
   ```
-  \\wsl$\Ubuntu\home\bkinsey\bkinsey808\songshare-2\vike-app\android\app\build\outputs\apk\debug\app-debug.apk
+  \\wsl$\Ubuntu\home\yourname\songshare-2\vike-app\android\app\build\outputs\apk\debug\app-debug.apk
   ```
 - Copy the APK to a convenient location on your Windows filesystem (e.g., Desktop).
 

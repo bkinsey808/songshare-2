@@ -3,8 +3,9 @@
     "dev": "vike dev",
     "build": "vike build",
     "build:ssr": "vike build",
-    "build:spa": "vike build --prerender src/",
+    "build:spa": "vike build --prerender /",
     "preview": "run-s build preview:wrangler",
+    "preview:spa": "vite preview",
     "lint": "eslint .",
     "shadcn": "npx shadcn@latest",
     "preview:wrangler": "wrangler pages dev",
@@ -13,7 +14,8 @@
     "cap": "capacitor",
     "android:build": "export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64 && export PATH=\"$JAVA_HOME/bin:$PATH\" && cd android && ./gradlew assembleDebug",
     "cloudflare:login": "wrangler login",
-    "postbuild": "cp -r public/* dist/cloudflare/ 2>/dev/null || true && cp -r dist/client/* dist/cloudflare/ 2>/dev/null || true"
+    "postbuild": "cp -r public/* dist/cloudflare/ 2>/dev/null || true && cp -r dist/client/* dist/cloudflare/ 2>/dev/null || true",
+    "build:spa-android": "export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64 && export PATH=\"$JAVA_HOME/bin:$PATH\" && rm -rf android/app/src/main/assets/* && pnpm build:spa && pnpm cap sync android && cp -r dist/client/* android/app/src/main/assets/ && cd android && ./gradlew clean && cd .. && pnpm android:build"
   },
   "dependencies": {
     "@radix-ui/react-icons": "^1.3.2",
